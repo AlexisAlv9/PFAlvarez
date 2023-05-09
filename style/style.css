@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.contenedor {
+    padding: 60px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+    }
+.titulo{
+    color: #032e38;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.headerinicio{
+    width: 100%;
+    height: 500px;
+    background:  url(../img/imgportada.jpg);
+    background-size: cover; 
+    position: relative;
+    background-attachment: fixed;
+}
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0 ;
+}
+nav > a{
+    color: #fff;
+    font-weight: 300px;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+nav > a:hover{
+    text-decoration: underline;
+    
+}
+header .texto-header{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 430px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.texto-header h1{
+    font-size: 50px;
+    color: #060d0f;
+}
+.texto-header h2{
+    font-size: 30px;
+    color: #0a0000;
+    font-weight: 300;
+}
+
+
+/* Galeria */
+
+.productos {
+    background-color: #c7d6da;
+}
+
+.galeria-prod{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding: 20px;
+    grid-gap: 10px;
+
+}
+
+
+.imagen-prod{
+    width: 22%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    height: 300px;
+
+}
+.imagen-prod > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(226, 92%, 50%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hover-galeria img{
+    width: 80px;
+}
+
+.hover-galeria p {
+    color: #849599;
+}
+.imagen-prod:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* footer */
+
+footer{
+    background: #414141 ;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #849599;
+}
+
+.contenedor-foo{
+    text-align: center;
+
+}
+
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: #849599 solid 3px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    color: #fff;
+
+}
+
+                                    /* Secccion Contacto */
+
+.headercontacto {
+    background-color: #414141;
+        width: 100%;
+        height: 50px;
+        background-size: cover; 
+        position: relative;
+        background-attachment: fixed;
+}
+.contacto-form{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+
+}
+.formulario{ 
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em; 
+    margin: auto;
+}
+
+.form-conteiner {
+    display: grid;
+    grid-auto-columns: auto;
+    width: 100%;
+    width: 100%;
+}
+
+.form-title{
+    text-align: center;
+    margin-bottom: .4em;
+    font-size: 2rem;
+
+}
+
+                                       /* Seccion Proyetos */
+                                       
+.headercontacto {
+    background-color: #414141;
+        width: 100%;
+        height: 50px;
+        background-size: cover; 
+        position: relative;
+        background-attachment: fixed;
+}
+
+.imagen-prod{
+    width: 100%;
+
+}
+
+.proyecto{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+   
+
+}
+
+.proyecto h1{
+    text-align: center;
+    margin: 15px 0px 40px;
+    font-size: 38px;
+
+}
+
+.proyecto-conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+.proyecto-item{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.proyecto-text{
+position: absolute;
+bottom: 0;
+padding: 20px;
+background:rgba(0, 0, 0, .5);
+color: #fff;
+transition:all 0.5s ease-out; ;
+transform: translateY(100%)
+}
+
+.proyecto-text p{
+    text-align: justify;
+}
+.proyecto-item:hover .proyecto-text{
+    transform: translateY(0%)
+   
+}
