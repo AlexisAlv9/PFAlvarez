@@ -68,7 +68,7 @@ header .texto-header{
 /* Galeria */
 
 .productos {
-    background-color: #c7d6da;
+    background-color: #fff;
 }
 
 .galeria-prod{
@@ -123,7 +123,7 @@ header .texto-header{
 /* footer */
 
 footer{
-    background: #414141 ;
+    background: #979797 ;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -261,3 +261,13 @@ transform: translateY(100%)
     transform: translateY(0%) 
 }
 
+@media(max-width: 991px) {
+    .galeria-prod {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proyecto-conteiner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
