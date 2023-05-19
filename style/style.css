@@ -24,7 +24,7 @@ body{
 .headerinicio{
     width: 100%;
     height: 500px;
-    background:  url(../img/imgportada.jpg);
+    background:  url(../img/adesing.jpg);
     background-size: cover; 
     position: relative;
     background-attachment: fixed;
@@ -74,7 +74,6 @@ header .texto-header{
 .galeria-prod{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     padding: 20px;
     grid-gap: 10px;
 
@@ -217,6 +216,7 @@ footer{
 
 }
 
+
 .proyecto{
     width: 90%;
     max-width: 1400px;
@@ -233,11 +233,13 @@ footer{
 }
 
 .proyecto-conteiner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
 }
 .proyecto-item{
-    width: 30%;
+    width: 80%;
     position: relative;
     overflow: hidden;
     
@@ -256,6 +258,6 @@ transform: translateY(100%)
     text-align: justify;
 }
 .proyecto-item:hover .proyecto-text{
-    transform: translateY(0%)
-   
+    transform: translateY(0%) 
 }
+
