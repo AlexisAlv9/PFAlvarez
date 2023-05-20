@@ -123,38 +123,62 @@ header .texto-header{
 /* footer */
 
 footer{
-    background: #979797 ;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 40px;
+    background-color: #fff;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #849599;
-}
-
-.contenedor-foo{
+.redes{
     text-align: center;
-
+    padding-bottom: 25px;
+    color: #999797;
 }
 
-.contenedor-foo h4{
-    color: #fff;
-    border-bottom: #849599 solid 3px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.redes a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #a59292 ;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.75;
 }
+
+.redes a:hover{
+   opacity: 1;
+}
+.list {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.list li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.list  li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.list li a:hover{
+    opacity: 1;
+}
+
 
 .titulo-final{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 0 0 0;
-    color: #fff;
+    color: #000000;
 
 }
 
@@ -169,7 +193,7 @@ footer{
         background-attachment: fixed;
 }
 .contacto-form{
-    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background-image: linear-gradient(15deg, #e2e2e2 0%, #6e6e6e 100%);
     min-height: 100vh;
     width: 100%;
     display: flex;
