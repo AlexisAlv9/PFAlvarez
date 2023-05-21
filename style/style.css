@@ -7,28 +7,8 @@
 body{
     font-family: 'Lato', sans-serif;
 }
-.contenedor {
-    padding: 60px 0px;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
 
-    }
-.titulo{
-    color: #032e38;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 80px;
-}
-.headerinicio{
-    width: 100%;
-    height: 500px;
-    background:  url(../img/adesing.jpg);
-    background-size: cover; 
-    position: relative;
-    background-attachment: fixed;
-}
+/* nav index */
 nav {
     text-align: right;
     padding: 30px 50px 0 0 ;
@@ -44,81 +24,11 @@ nav > a:hover{
     text-decoration: underline;
     
 }
-header .texto-header{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 430px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-}
-.texto-header h1{
-    font-size: 50px;
-    color: #060d0f;
-}
-.texto-header h2{
-    font-size: 30px;
-    color: #0a0000;
-    font-weight: 300;
-}
+/* header */
 
 
-/* Galeria */
 
-.productos {
-    background-color: #fff;
-}
-
-.galeria-prod{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
-    grid-gap: 10px;
-
-}
-
-
-.imagen-prod{
-    width: 22%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    height: 300px;
-
-}
-.imagen-prod > img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(226, 92%, 50%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.hover-galeria img{
-    width: 80px;
-}
-
-.hover-galeria p {
-    color: #849599;
-}
-.imagen-prod:hover .hover-galeria{
-    transform: scale(1);
-}
 
 /* footer */
 
@@ -285,13 +195,3 @@ transform: translateY(100%)
     transform: translateY(0%) 
 }
 
-@media(max-width: 991px) {
-    .galeria-prod {
-        
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .proyecto-conteiner{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}

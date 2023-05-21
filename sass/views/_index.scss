@@ -35,31 +35,29 @@
 .productos {
     background-color: $fontlight;
     
-}
-.titulo-prod{
-    color: #032e38;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 80px;
-}
+    &-contenedor {
+        padding: 60px 0px;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    
+        }
 
-.contenedor-prod {
-    padding: 60px 0px;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-
+    &-titulo{
+        color: #032e38;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 80px;  
     }
-
-.galeria-prod{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
-    grid-gap: 10px;
-
+    &-galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        grid-gap: 10px;
 }
-.imagen-prod{
+
+    &-imagen{
     width: 100%;
     margin-bottom: 10px;
     overflow: hidden;
@@ -67,44 +65,54 @@
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     height: 300px;
+}
+    .hover-galeria{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(0);
+        background: hsla(226, 92%, 50%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+     
+       
+} 
+
+    &-imagen > img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
 
 }
-.imagen-prod > img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(226, 92%, 50%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+/*hover*/
+
+
 .hover-galeria img{
     width: 80px;
+   
+    &-galeria p {
+        color: #849599;
+    }
 }
 
-.hover-galeria p {
-    color: #849599;
-}
-.imagen-prod:hover .hover-galeria{
+
+.productos-imagen:hover .hover-galeria{
     transform: scale(1);
 }
 
-
+/*galeria*/
 
 @media(max-width: $bplarge) {
-    .galeria-prod {
+    .productos-galeria {
         
         grid-template-columns: repeat(1, 1fr);
     }
