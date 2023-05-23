@@ -1,5 +1,13 @@
 /*header*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
 .slider{
     width: 100%;
     height: 600px;
@@ -89,8 +97,9 @@
 } 
 
     &-imagen > img{
-        height: 100%;
+       
         width: 100%;
+        height: 100%;
         object-fit: cover;
         display: block;
     }
@@ -103,7 +112,7 @@
 
 
 .hover-galeria img{
-    width: 80px;
+    width: 100px;
    
     &-galeria p {
         color: #849599;
@@ -123,8 +132,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .proyecto-conteiner{
-        grid-template-columns: repeat(1, 1fr);
-    }
+    
 }
 
