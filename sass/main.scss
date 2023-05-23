@@ -1,7 +1,12 @@
 //anidamientos SASS
 
 @import './utils/variables';
+
+//views
 @import'./views/index';
+@import'./views/proyecto';
+@import'./views/contacto';
 
 
-
+//componentes
+@import'./components/footer';

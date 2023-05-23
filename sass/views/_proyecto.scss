@@ -1,0 +1,82 @@
+           /* Seccion Proyetos */
+           @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
+           * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+           }
+           body{
+               font-family: 'Lato', sans-serif;
+           }
+           
+          .headercontacto {
+          background-color: #414141;
+          width: 100%;
+          height: 50px;
+          background-size: cover; 
+          position: relative;
+           background-attachment: fixed;
+             }
+                                    
+    
+                                    
+                                    
+                                    .proyecto{
+                                        width: 90%;
+                                        max-width: 1400px;
+                                        margin: auto;
+                                      
+                                        h1{
+                                        text-align: center;
+                                        margin: 15px 0px 40px;
+                                        font-size: 38px;
+                                       }
+                                      
+                                        &-conteiner{
+                                        display: grid;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        padding: 20px;
+                                        grid-gap: 10px;
+                                      
+                                        &-item{
+                                         width: 100%;
+                                        position: relative;
+                                        overflow: hidden;
+                                       
+                                        &-imagen{
+                                            width: 100%;
+                                            height: 90%;
+                                        
+                                        }
+                                        &-text{
+                                         position: absolute;
+                                         bottom: 0;
+                                         padding: 20px;
+                                        background:rgba(0, 0, 0, .5);
+                                        color: #fff;
+                                        
+                                          
+                                          p{
+                                            text-align: justify;
+                                          }
+                                        }
+                                    }
+                                    }
+
+                                    }
+                                    
+                                    
+                                   
+                                   .proyecto-conteiner-item:hover .proyecto-conteiner-item-text{
+                                    transform: translateY(0%);
+                                    
+                                   }
+                                   .proyecto-conteiner-item-text { 
+                                    transition:all 0.5s ease-out; 
+                                   transform: translateY(100%)}
+
+                                   @media(max-width: $bplarge){
+                                    .proyecto-conteiner{
+                                        grid-template-columns: repeat(1, 1fr);
+                                    }
+                                   }
