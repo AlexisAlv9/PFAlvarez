@@ -46,85 +46,52 @@ body{
 
 
 /* Galeria */
-.productos {
-    background-color: $fontlight;
-    
-    &-contenedor {
-        padding: 60px 0px;
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-        overflow: hidden;
-    
-        }
-
-    &-titulo{
-        color: #032e38;
-        font-size: 60px;
-        text-align: center;
-        margin-bottom: 80px;  
-    }
-    &-galeria{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 20px;
-        grid-gap: 10px;
-}
-
-    &-imagen{
+.conteiner{
     width: 100%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    height: 300px;
-}
-    .hover-galeria{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        transform: scale(0);
-        background: hsla(226, 92%, 50%, 0.7);
-        transition: transform .5s;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-     
-       
-} 
+    max-width: 1200px;
+    height: 430;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 
-    &-imagen > img{
-       
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
+    &-card{
+        width: 330px;
+        height: 430;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgb(0,0,0,0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        img{
+            width: 330px;
+            height: 230px;
 
-
-}
-
-
-/*hover*/
-
-
-.hover-galeria img{
-    width: 100px;
-   
-    &-galeria p {
-        color: #849599;
+        }
+        h4{
+            font-weight: 500;
+        }
+        p{
+            padding: 0 1rem;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        a{
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        
     }
 }
 
+//hover
+.conteiner-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
 
-.productos-imagen:hover .hover-galeria{
-    transform: scale(1);
 }
-
-/*galeria*/
 
 @media(max-width: $bplarge) {
     .productos-galeria {
