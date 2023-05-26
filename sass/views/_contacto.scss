@@ -7,30 +7,78 @@
                                   }
                                   body{
                                       font-family: 'Lato', sans-serif;
+                                      
                                   }
                                 
-                                .contacto {
-                                    background-image: linear-gradient(15deg, #e2e2e2 0%, #6e6e6e 100%);
-                                    min-height: 100vh;
-                                    width: 100%;
+                                
+                                .pantalla-dividida{
+                                    
                                     display: flex;
+                                    text-align: center;
+                                    justify-content: center;
+                                    width: 100%;
+
+                                    &-izquierda{
+                                    margin: 0px;
+                                    padding: 0px;
+                                    width: 30%;
+                                    
+                                    
+                                                                       
+                                    p{
+                                        font-size: 10px;
+                                        color: $fontlight;
+                                       
+                                    }
+
+                                     img{
+                                            width: 50%;
+                                            
+                                            height: 30%;
+                                      }
+                                }
+                                }
+                                
+                                
+                                  
+                                    
+                                 
+                                    
+                                
+                                
+                                
+                               
+
+
+
+                                  .contacto {
+                                    background: $fontFooter;
+                                    
+                                    width: 100%;
+                                    margin: 0px ;
+                                    padding: 0px;
                                     font-family: Arial, Helvetica, sans-serif;
+                                    
                                    &-form{
                                     width: 90%;
-                                    max-width: 400px;
+                                    max-width: 500px;
+                                    
                                     border-radius: 1em;
                                     padding: 3.5em 1.5em; 
-                                    margin: auto;
+                                    margin: 0;
+                                    padding: 0;
+                                    
                                   
                                     &-conteiner {
                                     display: grid;
                                     grid-auto-columns: auto;
                                     width: 100%;
-                                    width: 100%;
-                                     &-title{
-                                    text-align: center;
-                                    margin-bottom: .4em;
-                                    font-size: 2rem;
+                                    
+                                    textarea{
+                                        max-width: 500px;
+                                        min-width: 500x;
+                                        min-height: 300px;
+                                        max-height: 300px;
                                     }
                                             }
                                      }

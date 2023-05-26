@@ -1,11 +1,103 @@
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: $fontFooter;
+    padding: 12px 20px;
+}
+.logo h1{
+    display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: $fontlight;
+                transition: 0.15s ease-in-out;
+                text-transform: uppercase;
+                position: relative;
+                font-size: 20px;
+
+    }
+    .menu{
+        display: flex;
+        li{
+            padding: 30px;
+            a{
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: $fontlight;
+                transition: 0.15s ease-in-out;
+                text-transform: uppercase;
+                position: relative;
+
+            }
+        }
+    }
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $fontlight;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after{
+    width: 100%;
+} 
+.open-menu , .close-menu{
+    position: absolute;
+    color: $fontlight;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top:20px;
+    right: 20px;
+}
+
+#check{
+    display: none;
+}
+@media(max-width: 610px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100vh;
+        z-index: 100;
+        background-color: $fontFooter;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu ,.close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+
+//footer
+
 .footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     padding: 40px;
-    background-color: #fff;
+    background-color: $fontBody;
     &-redes{
         text-align: center;
         padding-bottom: 25px;
-        color: #999797;
+        color:$fontNav;
     a{
         font-size: 24px;
         color: inherit;
