@@ -22,7 +22,8 @@
     .menu{
         display: flex;
         li{
-            padding: 30px;
+            padding: 10px;
+            margin: 5px;
             a{
                 display: inline-block;
                 text-decoration: none;
@@ -32,8 +33,9 @@
                 text-transform: uppercase;
                 position: relative;
                 font-family: $fontsPrimary;
-                font-size: 14px;
+                font-size: 11px;
                 padding: 0px;
+               
 
             }
         }
