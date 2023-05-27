@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: $fontsPrimary;
     background-color: $fontFooter
 }
 
@@ -46,7 +46,7 @@ body{
 
 .texto-inicio{
     h1{
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: $fontsPrimary;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 15px;
@@ -54,6 +54,7 @@ body{
         color:  $fontlight
     }
     p{
+        font-family: $fontsSecondary;
         font-size: 17px;
         color:  $fontlight
 
@@ -87,11 +88,13 @@ body{
 
         }
         h4{
+           font-family: $fontsPrimary;
             font-weight: 500;
             color: $fontlight
             
         }
         p{
+            font-family: $fontsSecondary;
             padding: 0 1rem;
             font-size: 16px;
             font-weight: 300;

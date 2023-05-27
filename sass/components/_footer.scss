@@ -6,7 +6,7 @@
     list-style: none;
     position: relative;
     background-color: $fontFooter;
-    padding: 12px 20px;
+    padding: 15px 40px;
 }
 .logo h1{
     display: inline-block;
@@ -16,13 +16,14 @@
                 transition: 0.15s ease-in-out;
                 text-transform: uppercase;
                 position: relative;
-                font-size: 20px;
+                font-size: 25px;
 
     }
     .menu{
         display: flex;
         li{
-            padding: 30px;
+            padding: 10px;
+            margin: 5px;
             a{
                 display: inline-block;
                 text-decoration: none;
@@ -31,6 +32,10 @@
                 transition: 0.15s ease-in-out;
                 text-transform: uppercase;
                 position: relative;
+                font-family: $fontsPrimary;
+                font-size: 11px;
+                padding: 0px;
+               
 
             }
         }

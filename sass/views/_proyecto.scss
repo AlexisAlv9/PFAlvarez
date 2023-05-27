@@ -5,18 +5,17 @@
                padding: 0;
                box-sizing: border-box;
            }
-           body{
-               font-family: 'Lato', sans-serif;
-           }
+           
            
       
             .proyectos-text{
-              h1{
+              h1 {
                 font-family: 'Bebas Neue', sans-serif;
                text-align: center;
                  margin-top: 50px;
                  margin-bottom: 15px;
                  font-size: 30px;
+                 font-family: $fontsPrimary;
 
               }
               p{
@@ -24,12 +23,13 @@
                 font-size: 20px;
                 text-align: center;
                 margin-bottom: 50px;
+                font-family: $fontsSecondary;
               }
             }                        
           
                                     
                                     
-           .conteiner{
+           .conteiner .coleccion1 {
             width: 100%;
             max-width: 1400px;
             height: 430;
@@ -56,6 +56,7 @@
                 }
                 h4{
                     font-weight: 500;
+                    font-family: $fontsPrimary;
                 }
                 p{
                     padding: 0 1rem;
@@ -71,6 +72,17 @@
                 
             }
         }
+        h2{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $fontsPrimary;
+        }
+
+       
+
+        
         
         //hover
         .conteiner-card:hover{
@@ -79,11 +91,4 @@
         
         }
         
-        @media(max-width: $bplarge) {
-            .productos-galeria {
-                
-                grid-template-columns: repeat(1, 1fr);
-            }
-        
-            
-        }
+       

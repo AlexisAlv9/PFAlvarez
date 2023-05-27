@@ -23,19 +23,18 @@
                                     padding: 0px;
                                     width: 30%;
                                     
-                                    
+                                    &-img{
+                                        height: 100px;
+                                        width: 100px;
+                                  }
                                                                        
                                     p{
-                                        font-size: 10px;
+                                        font-size: 15px;
                                         color: $fontlight;
                                        
                                     }
 
-                                     img{
-                                            width: 50%;
-                                            
-                                            height: 30%;
-                                      }
+                                     
                                 }
                                 }
                                 
@@ -54,7 +53,7 @@
                                   .contacto {
                                     background: $fontFooter;
                                     
-                                    width: 100%;
+                                    width: 50%;
                                     margin: 0px ;
                                     padding: 0px;
                                     font-family: Arial, Helvetica, sans-serif;
@@ -84,5 +83,29 @@
                                      }
                             }
                                     
+                            @media(max-width: $bplarge) {
+                                .pantalla-dividida-izquierda {
+                                    
+                                    grid-template-columns: repeat(1, 1fr);
+                                }
+                            
                                 
+                            }
                                 
+                            @media(max-width: 610px) {
+                                .pantalla-dividida{
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .pantalla-dividida-izquierda{
+                                        height: 400px;
+                                        width: 400px;
+                                    }
+                                    .contacto{
+                                        height: 400px;
+                                        width: 400px;
+                                    }
+                                }
+
+
+                                }

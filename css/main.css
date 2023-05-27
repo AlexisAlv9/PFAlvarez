@@ -10,8 +10,8 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #e2e0bf;
+  font-family: font-family "Bebas Neue", sans-serif;
+  background-color: #ffffff;
 }
 
 .slider {
@@ -61,16 +61,17 @@ body {
   }
 }
 .texto-inicio h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: font-family "Bebas Neue", sans-serif;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
   font-size: 30px;
-  color: #252d35;
+  color: #051424;
 }
 .texto-inicio p {
+  font-family: font-family "Josefin Sans", sans-serif;
   font-size: 17px;
-  color: #252d35;
+  color: #051424;
 }
 
 /* Galeria */
@@ -98,10 +99,12 @@ body {
   height: 230px;
 }
 .conteiner-card h4 {
+  font-family: font-family "Bebas Neue", sans-serif;
   font-weight: 500;
-  color: #252d35;
+  color: #051424;
 }
 .conteiner-card p {
+  font-family: font-family "Josefin Sans", sans-serif;
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
@@ -138,7 +141,7 @@ body {
 }
 .proyecto-destacado-conteiner h4 {
   font-weight: 500;
-  color: #252d35;
+  color: #051424;
 }
 .proyecto-destacado-conteiner a {
   font-weight: 500;
@@ -166,25 +169,23 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
 .proyectos-text h1 {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 30px;
+  font-family: font-family "Bebas Neue", sans-serif;
 }
 .proyectos-text p {
   margin-top: 50px;
   font-size: 20px;
   text-align: center;
   margin-bottom: 50px;
+  font-family: font-family "Josefin Sans", sans-serif;
 }
 
-.conteiner {
+.conteiner .coleccion1 {
   width: 100%;
   max-width: 1400px;
   height: 430;
@@ -193,7 +194,7 @@ body {
   justify-content: center;
   margin: auto;
 }
-.conteiner-card {
+.conteiner .coleccion1-card {
   width: 350px;
   height: 500;
   border-radius: 8px;
@@ -204,22 +205,31 @@ body {
   transition: all 0.25s;
   margin-bottom: 50px;
 }
-.conteiner-card img {
+.conteiner .coleccion1-card img {
   width: 350px;
   height: 330px;
 }
-.conteiner-card h4 {
+.conteiner .coleccion1-card h4 {
   font-weight: 500;
+  font-family: font-family "Bebas Neue", sans-serif;
 }
-.conteiner-card p {
+.conteiner .coleccion1-card p {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-.conteiner-card a {
+.conteiner .coleccion1-card a {
   font-weight: 500;
   text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: font-family "Bebas Neue", sans-serif;
 }
 
 .conteiner-card:hover {
@@ -227,11 +237,6 @@ body {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 991px) {
-  .productos-galeria {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 /* Secccion Contacto */
 * {
   margin: 0;
@@ -254,18 +259,18 @@ body {
   padding: 0px;
   width: 30%;
 }
-.pantalla-dividida-izquierda p {
-  font-size: 10px;
-  color: #252d35;
+.pantalla-dividida-izquierda-img {
+  height: 100px;
+  width: 100px;
 }
-.pantalla-dividida-izquierda img {
-  width: 50%;
-  height: 30%;
+.pantalla-dividida-izquierda p {
+  font-size: 15px;
+  color: #051424;
 }
 
 .contacto {
-  background: #e2e0bf;
-  width: 100%;
+  background: #ffffff;
+  width: 50%;
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -290,6 +295,26 @@ body {
   max-height: 300px;
 }
 
+@media (max-width: 991px) {
+  .pantalla-dividida-izquierda {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 610px) {
+  .pantalla-dividida {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pantalla-dividida .pantalla-dividida-izquierda {
+    height: 400px;
+    width: 400px;
+  }
+  .pantalla-dividida .contacto {
+    height: 400px;
+    width: 400px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -314,36 +339,32 @@ body {
 
 .pantalla-dividida {
   display: flex;
-  justify-content: center;
-  height: 800px;
 }
 .pantalla-dividida-izquierda {
   height: 100vh;
-  width: 100%;
+  width: 50%;
   justify-content: center;
 }
-.pantalla-dividida-izquierda h1 {
+.pantalla-dividida-izquierda img {
+  width: 80%;
+  height: 50%;
+}
+.pantalla-dividida-derecha {
+  height: 100vh;
+  width: 50%;
+  justify-content: center;
+}
+.pantalla-dividida-derecha h1 {
   margin-top: 15px;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-family: font-family "Bebas Neue", sans-serif;
 }
-.pantalla-dividida-izquierda p {
+.pantalla-dividida-derecha p {
   margin-top: 15px;
   text-align: center;
   font-size: 15px;
-  font-family: font-family "Overpass", sans-serif;
-}
-.pantalla-dividida-izquierda article {
-  padding: 10px;
-}
-.pantalla-dividida-izquierda article iframe {
-  width: 50%;
-  margin: auto;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: font-family "Josefin Sans", sans-serif;
 }
 
 .nav-bar {
@@ -353,19 +374,19 @@ body {
   align-items: center;
   list-style: none;
   position: relative;
-  background-color: #e2e0bf;
-  padding: 12px 20px;
+  background-color: #ffffff;
+  padding: 15px 40px;
 }
 
 .logo h1 {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #252d35;
+  color: #051424;
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .menu {
@@ -378,10 +399,13 @@ body {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #252d35;
+  color: #051424;
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   position: relative;
+  font-family: font-family "Bebas Neue", sans-serif;
+  font-size: 14px;
+  padding: 0px;
 }
 
 .menu li a::after {
@@ -391,7 +415,7 @@ body {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #252d35;
+  background-color: #051424;
   transition: 0.15s ease-in-out;
 }
 
@@ -401,7 +425,7 @@ body {
 
 .open-menu, .close-menu {
   position: absolute;
-  color: #252d35;
+  color: #051424;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
@@ -433,7 +457,7 @@ body {
     top: 0;
     right: -100vh;
     z-index: 100;
-    background-color: #e2e0bf;
+    background-color: #ffffff;
     transition: all 0.2s ease-in-out;
   }
   .menu li {
@@ -452,7 +476,7 @@ body {
 .footer {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 40px;
-  background-color: #e3e49f;
+  background-color: #f8f8d4;
 }
 .footer-redes {
   text-align: center;
