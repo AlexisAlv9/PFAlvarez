@@ -12,7 +12,7 @@ body{
 
 .slider{
     width: 90%;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     align-items: center;
     margin-left: 60px;
@@ -29,10 +29,18 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
-        
-        
-    }
+        font-size: 50px;
+      }
+      p{
+        position: absolute;
+        text-align: center;
+        color: $fontBody;
+        align-items: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+      }
     ul{
         display: flex;
         animation: cambio 20s infinite alternate linear;
@@ -65,22 +73,7 @@ body{
 }
 
 
-.texto-inicio{
-    h1{
-        font-family: $fontsPrimary;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 15px;
-        font-size: 30px;
-        color:  $fontlight
-    }
-    p{
-        font-family: $fontsSecondary;
-        font-size: 17px;
-        color:  $fontlight
 
-    }
-}
 
 
 
@@ -108,7 +101,7 @@ body{
             height: 230px;
 
         }
-        h4{
+        h2{
            font-family: $fontsPrimary;
             font-weight: 500;
             color: $fontlight
@@ -180,9 +173,17 @@ body{
 }
 
 @media(max-width: $bplarge) {
-    .productos-galeria {
+    .slider {
         
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: row;
+        margin: 0px;
+        width: 100%;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20;
+        }
     }
 
     
