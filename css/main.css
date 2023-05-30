@@ -6,7 +6,7 @@
   align-items: center;
   margin-left: 60px;
   margin-right: 60px;
-  padding-top: 60px;
+  padding-top: 0;
 }
 .slider h1 {
   position: absolute;
@@ -229,11 +229,12 @@
 /* Seccion Proyetos */
 .proyectos-text h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 15px;
   font-size: 30px;
   font-family: font-family "Bebas Neue", sans-serif;
   font-weight: 100;
+  padding-top: 0;
 }
 .proyectos-text p {
   font-size: 20px;
@@ -285,13 +286,13 @@
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* Secccion Contacto */
 .pantalla-divididaCon {
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100%;
   margin-bottom: 100px;
+  padding-top: 0px;
 }
 .pantalla-divididaCon-izquierda {
   margin: 10px;
@@ -314,7 +315,7 @@
   margin: 10px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 50px;
+  padding-top: 0px;
 }
 .contacto-form {
   width: 90%;
@@ -365,7 +366,7 @@
   margin-top: 50px;
   display: flex;
   padding-left: 60px;
-  padding-top: 30px;
+  padding-top: 0px;
   padding-right: 60px;
 }
 .pantalla-div-izquierda {
@@ -452,8 +453,8 @@
   display: flex;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 60px;
-  margin-top: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 .pantalla-dividida-izquierda {
   height: 450px;
