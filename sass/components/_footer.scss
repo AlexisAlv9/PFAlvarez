@@ -4,10 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: $fontsPrimary;
-    background-color: $fontFooter
-}
+
 
 .nav-bar{
     width: 100%;
@@ -139,18 +136,20 @@ body{
     &-redes{
         text-align: center;
         
-        color:$fontNav;
+        color:$fontlight;
     a{
         font-size: 24px;
         color: inherit;
-        border: 1px solid #a59292 ;
+        
         width: 40px;
         height: 40px;
         line-height: 38px;
         display: inline-block;
         text-align: center;
         border-radius: 50%;
-        opacity: 0.75;}
+        opacity: 1;
+        color: $fontlight;
+    }
     }
     
 
@@ -159,7 +158,7 @@ body{
      text-align: center;
     font-size: 15px;
     margin: 10px 0 0 0;
-    color: #000000;
+    color: $fontlight;
     }
     }
 
@@ -167,11 +166,9 @@ body{
 
 
 .redes a:hover{
-   opacity: 1;
+   opacity: .5;
 }
 
-.list li a:hover{
-    opacity: 1;
-}
+
 
 

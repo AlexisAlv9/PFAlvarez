@@ -6,6 +6,7 @@
   align-items: center;
   margin-left: 60px;
   margin-right: 60px;
+  padding-top: 60px;
 }
 .slider h1 {
   position: absolute;
@@ -89,6 +90,7 @@
   font-weight: 100;
   margin-left: 0;
   display: inline-block;
+  padding-left: 12px;
 }
 .conteiner-texto p {
   font-family: font-family "Josefin Sans", sans-serif;
@@ -97,6 +99,17 @@
   font-weight: 300;
   color: hsl(47, 9%, 41%);
   text-align: center;
+  padding-top: 20px;
+}
+.conteiner-texto a {
+  font-size: 20px;
+  color: inherit;
+  color: #071f38;
+  line-height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 1;
+  padding-left: 17px;
 }
 .conteiner-card {
   width: 430px;
@@ -150,6 +163,10 @@
   height: 100%;
 }
 
+.conteiner-texto a:hover {
+  opacity: 0.5;
+}
+
 .conteiner-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -165,17 +182,17 @@
     flex-direction: row;
     margin-left: 30px;
     width: 90%;
-    height: 250px;
+    height: 350px;
   }
   .slider h1 {
     font-size: 25px;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .slider p {
     font-size: 15px;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -184,9 +201,20 @@
     max-width: 1200px;
     height: 300;
   }
+  .conteiner-texto {
+    padding: 12px;
+    margin-top: 20px;
+  }
+  .conteiner-texto h2 {
+    font-size: 25px;
+  }
   .conteiner-card {
-    width: 330px;
-    height: 300;
+    width: 300px;
+    height: 250px;
+  }
+  .conteiner img {
+    width: 300px;
+    height: 250px;
   }
   .proyecto-destacado {
     width: 100%;
@@ -391,24 +419,33 @@ header {
 
 @media (max-width: 991px) {
   .pantalla-div {
-    flex-direction: row;
     flex-direction: column;
+    padding: 0;
   }
   .pantalla-div-izquierda {
     width: 100%;
     height: 100%;
+    padding: 0px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .pantalla-div-izquierda img {
-    width: 90%;
-    height: 450px;
+    width: 100%;
+    height: 400px;
+    padding: 0;
   }
   .pantalla-div-derecha {
     width: 100%;
     height: 100%;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .pantalla-div-derecha img {
-    width: 90%;
-    height: 450px;
+    width: 100%;
+    height: 400px;
+    padding: 0;
   }
 }
 .pantalla-dividida {
@@ -496,36 +533,54 @@ header {
 @media (max-width: 1004px) {
   .pantalla-dividida {
     flex-direction: column;
+    padding: 0;
   }
   .pantalla-dividida-izquierda {
     width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .pantalla-dividida-izquierda img {
-    width: 90%;
+    width: 100%;
     height: 100%;
+    padding-left: 10px;
   }
   .pantalla-dividida-derecha {
     width: 100%;
-    margin: 10px;
-    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 70%;
+  }
+  .pantalla-dividida-derecha p {
+    padding: 0;
+    width: 100%;
   }
   .pantalla-divididaDos {
     flex-direction: column;
+    padding: 0;
   }
   .pantalla-divididaDos-izquierdaDos {
     width: 100%;
     height: 100%;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .pantalla-divididaDos-izquierdaDos img {
-    width: 90%;
+    padding-left: 10px;
+    width: 100%;
     height: 450px;
   }
   .pantalla-divididaDos-derechaDos {
     width: 100%;
     height: 100%;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .pantalla-divididaDos-derechaDos img {
-    width: 90%;
+    padding-left: 10px;
+    width: 100%;
     height: 450px;
   }
 }
@@ -533,11 +588,6 @@ header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: font-family "Bebas Neue", sans-serif;
-  background-color: #ffffff;
 }
 
 .nav-bar {
@@ -674,31 +724,27 @@ body {
 }
 .footer-redes {
   text-align: center;
-  color: hsl(47, 9%, 41%);
+  color: #071f38;
 }
 .footer-redes a {
   font-size: 24px;
   color: inherit;
-  border: 1px solid #a59292;
   width: 40px;
   height: 40px;
   line-height: 38px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  opacity: 0.75;
+  opacity: 1;
+  color: #071f38;
 }
 .footer-titulo-final {
   text-align: center;
   font-size: 15px;
   margin: 10px 0 0 0;
-  color: #000000;
+  color: #071f38;
 }
 
 .redes a:hover {
-  opacity: 1;
-}
-
-.list li a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
