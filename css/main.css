@@ -1,19 +1,4 @@
 /*header*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: font-family "Bebas Neue", sans-serif;
-  background-color: #ffffff;
-}
-
 .slider {
   width: 90%;
   height: 700px;
@@ -25,7 +10,7 @@ body {
 .slider h1 {
   position: absolute;
   text-align: center;
-  color: #f8f8d4;
+  color: #dfdfdf;
   align-items: center;
   top: 50%;
   left: 50%;
@@ -35,7 +20,7 @@ body {
 .slider p {
   position: absolute;
   text-align: center;
-  color: #f8f8d4;
+  color: #dfdfdf;
   align-items: center;
   top: 60%;
   left: 50%;
@@ -65,10 +50,10 @@ body {
     margin-left: 0;
   }
   25% {
-    margin-left: -102%;
+    margin-left: -100%;
   }
   45% {
-    margin-left: -102%;
+    margin-left: -100%;
   }
   50% {
     margin-left: -200%;
@@ -93,40 +78,44 @@ body {
   justify-content: center;
   margin: auto;
 }
+.conteiner-texto {
+  padding: 20px;
+  margin-top: 30px;
+}
+.conteiner-texto h2 {
+  font-family: font-family "Bebas Neue", sans-serif;
+  color: #071f38;
+  font-size: 45px;
+  font-weight: 100;
+  margin-left: 0;
+  display: inline-block;
+}
+.conteiner-texto p {
+  font-family: font-family "Josefin Sans", sans-serif;
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(47, 9%, 41%);
+  text-align: center;
+}
 .conteiner-card {
-  width: 330px;
-  height: 430;
+  width: 430px;
+  height: 530;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+  margin-top: 30px;
 }
 .conteiner-card img {
-  width: 330px;
-  height: 230px;
-}
-.conteiner-card h2 {
-  font-family: font-family "Bebas Neue", sans-serif;
-  font-weight: 500;
-  color: #051424;
-}
-.conteiner-card p {
-  font-family: font-family "Josefin Sans", sans-serif;
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
-  color: hsl(47, 9%, 41%);
+  width: 430px;
+  height: 330px;
 }
 .conteiner-card a {
   font-weight: 500;
   text-decoration: none;
-}
-
-.conteiner-card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .proyecto-destacado {
@@ -148,9 +137,9 @@ body {
   text-align: center;
   transition: all 0.25s;
 }
-.proyecto-destacado-conteiner h4 {
+.proyecto-destacado-conteiner h3 {
   font-weight: 500;
-  color: #051424;
+  color: #071f38;
 }
 .proyecto-destacado-conteiner a {
   font-weight: 500;
@@ -161,6 +150,11 @@ body {
   height: 100%;
 }
 
+.conteiner-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
 .proyecto-destacado-conteiner:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -169,25 +163,43 @@ body {
 @media (max-width: 991px) {
   .slider {
     flex-direction: row;
-    margin: 0px;
-    width: 100%;
+    margin-left: 30px;
+    width: 90%;
+    height: 250px;
   }
   .slider h1 {
-    font-size: 40px;
+    font-size: 25px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .slider p {
-    font-size: 20;
+    font-size: 15px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .conteiner {
+    width: 100%;
+    max-width: 1200px;
+    height: 300;
+  }
+  .conteiner-card {
+    width: 330px;
+    height: 300;
+  }
+  .proyecto-destacado {
+    width: 100%;
+    max-width: 1200px;
+    height: 300;
+  }
+  .proyecto-destacado-conteiner {
+    width: 80%;
+    height: 300px;
   }
 }
 /* Seccion Proyetos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .proyectos-text h1 {
-  font-family: "Bebas Neue", sans-serif;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 15px;
@@ -195,14 +207,12 @@ body {
   font-family: font-family "Bebas Neue", sans-serif;
 }
 .proyectos-text p {
-  margin-top: 50px;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 50px;
   font-family: font-family "Josefin Sans", sans-serif;
 }
 
-.conteiner .coleccion1 {
+.conteiner-proy {
   width: 100%;
   max-width: 1400px;
   height: 430;
@@ -211,7 +221,7 @@ body {
   justify-content: center;
   margin: auto;
 }
-.conteiner .coleccion1-card {
+.conteiner-proy-card {
   width: 350px;
   height: 500;
   border-radius: 8px;
@@ -222,63 +232,51 @@ body {
   transition: all 0.25s;
   margin-bottom: 50px;
 }
-.conteiner .coleccion1-card img {
+.conteiner-proy-card img {
   width: 350px;
   height: 330px;
 }
-.conteiner .coleccion1-card h4 {
+.conteiner-proy-card h4 {
   font-weight: 500;
   font-family: font-family "Bebas Neue", sans-serif;
 }
-.conteiner .coleccion1-card p {
+.conteiner-proy-card p {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-.conteiner .coleccion1-card a {
+.conteiner-proy-card a {
   font-weight: 500;
   text-decoration: none;
 }
 
-h2 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: font-family "Bebas Neue", sans-serif;
-}
-
-.conteiner-card:hover {
+.conteiner-proy-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Secccion Contacto */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .pantalla-divididaCon {
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 100px;
 }
 .pantalla-divididaCon-izquierda {
   margin: 10px;
+  margin-left: 30px;
   padding: 10px;
   width: 30%;
 }
 .pantalla-divididaCon-izquierda-img {
-  height: 200px;
-  width: 100%;
+  height: 250px;
+  width: 80%;
 }
 .pantalla-divididaCon-izquierda p {
   font-size: 15px;
-  color: #051424;
+  color: #071f38;
 }
 
 .contacto {
@@ -287,6 +285,7 @@ h2 {
   margin: 10px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
 }
 .contacto-form {
   width: 90%;
@@ -330,37 +329,31 @@ h2 {
     width: 100%;
     margin: 10px;
     padding: 10px;
+    margin-left: 30px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
 header {
   height: 80px;
 }
 
 .pantalla-div {
   display: flex;
+  padding-left: 60px;
+  padding-top: 30px;
+  padding-right: 60px;
 }
 .pantalla-div-izquierda {
   height: 100vh;
   width: 50%;
   justify-content: center;
   margin-bottom: 0px;
+  padding-right: 60px;
 }
 .pantalla-div-izquierda img {
-  width: 90%;
-  height: 40%;
-  padding-left: 30px;
+  width: 100%;
+  height: 50%;
 }
-.pantalla-div-izquierda h1 {
+.pantalla-div-izquierda h2 {
   margin-top: 15px;
   text-align: center;
   font-size: 40px;
@@ -377,13 +370,13 @@ header {
   width: 50%;
   justify-content: center;
   margin-bottom: 0;
+  padding-left: 60px;
 }
 .pantalla-div-derecha img {
-  width: 90%;
-  height: 40%;
-  padding-left: 30px;
+  width: 100%;
+  height: 50%;
 }
-.pantalla-div-derecha h1 {
+.pantalla-div-derecha h2 {
   margin-top: 15px;
   text-align: center;
   font-size: 40px;
@@ -420,6 +413,9 @@ header {
 }
 .pantalla-dividida {
   display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
 }
 .pantalla-dividida-izquierda {
   height: 450px;
@@ -427,22 +423,15 @@ header {
   justify-content: center;
 }
 .pantalla-dividida-izquierda img {
-  width: 80%;
-  height: 80%;
-  padding-left: 30px;
-  margin-left: 30px;
+  width: 100%;
+  height: 90%;
 }
 .pantalla-dividida-derecha {
   height: 450px;
   width: 50%;
   justify-content: center;
 }
-.pantalla-dividida-derecha img {
-  width: 80%;
-  height: 50%;
-}
 .pantalla-dividida-derecha h1 {
-  margin-top: 15px;
   text-align: center;
   font-size: 40px;
   font-family: font-family "Bebas Neue", sans-serif;
@@ -452,6 +441,7 @@ header {
   text-align: center;
   font-size: 15px;
   font-family: font-family "Josefin Sans", sans-serif;
+  padding-left: 60px;
 }
 
 .pantalla-divididaDos {
@@ -461,12 +451,11 @@ header {
   height: 800px;
   width: 50%;
   justify-content: center;
+  padding-left: 60px;
 }
 .pantalla-divididaDos-izquierdaDos img {
-  width: 85%;
+  width: 100%;
   height: 50%;
-  padding-left: 30px;
-  margin-left: 30px;
 }
 .pantalla-divididaDos-izquierdaDos h2 {
   margin-top: 15px;
@@ -484,12 +473,12 @@ header {
   height: 800px;
   width: 50%;
   justify-content: center;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 .pantalla-divididaDos-derechaDos img {
-  width: 85%;
+  width: 100%;
   height: 50%;
-  padding-left: 30px;
-  margin-left: 30px;
 }
 .pantalla-divididaDos-derechaDos h2 {
   margin-top: 0px;
@@ -546,6 +535,11 @@ header {
   box-sizing: border-box;
 }
 
+body {
+  font-family: font-family "Bebas Neue", sans-serif;
+  background-color: #ffffff;
+}
+
 .nav-bar {
   width: 100%;
   display: flex;
@@ -554,18 +548,33 @@ header {
   list-style: none;
   position: relative;
   background-color: #ffffff;
-  padding: 15px 40px;
+  padding: 60px;
+  padding-bottom: 60px;
+  padding-top: 20px;
 }
 
-.logo h1 {
+.titulo {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #051424;
+  color: #071f38;
   transition: 0.15s ease-in-out;
-  text-transform: uppercase;
   position: relative;
-  font-size: 25px;
+  font-size: 28px;
+  padding-right: 3px;
+  font-size: font-family "Bebas Neue", sans-serif;
+}
+
+.titulo-dos {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(69, 76, 97);
+  transition: 0.15s ease-in-out;
+  position: relative;
+  font-size: 28px;
+  padding-left: 10px;
+  font-size: font-family "Bebas Neue", sans-serif;
 }
 
 .menu {
@@ -579,7 +588,7 @@ header {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #051424;
+  color: #071f38;
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   position: relative;
@@ -595,7 +604,7 @@ header {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #051424;
+  background-color: #071f38;
   transition: 0.15s ease-in-out;
 }
 
@@ -605,7 +614,7 @@ header {
 
 .open-menu, .close-menu {
   position: absolute;
-  color: #051424;
+  color: #071f38;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
@@ -655,8 +664,8 @@ header {
 }
 .footer {
   font-family: font-family "Josefin Sans", sans-serif;
-  padding: 40px;
-  background-color: #f8f8d4;
+  padding: 20px;
+  background-color: #dfdfdf;
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -678,24 +687,6 @@ header {
   text-align: center;
   border-radius: 50%;
   opacity: 0.75;
-}
-.footer-list {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 19px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  text-align: center;
-}
-.footer-list li {
-  display: inline-block;
-  padding: 0 15px;
-}
-.footer-list li a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
 }
 .footer-titulo-final {
   text-align: center;

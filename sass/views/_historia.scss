@@ -1,15 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Lato', sans-serif;
-   
-
-}
 header{
     height: 80px;
 }
@@ -18,6 +7,9 @@ header{
 
 .pantalla-div {
     display: flex;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-right: 60px;
     
 
     &-izquierda{
@@ -26,12 +18,14 @@ header{
         justify-content: center;
         margin-bottom: 0px;
 
+        padding-right: 60px;
+
         img{
-            width: 90%;
-            height: 40%;
-            padding-left: 30px;
+            width: 100%;
+            height: 50%;
+            
         }
-        h1{
+        h2{
             margin-top: 15px;
             text-align: center;
             font-size: 40px;
@@ -43,7 +37,8 @@ header{
             margin-top: 15px;
             text-align: center;
             font-size: 15px;
-          font-family:  $fontsSecondary
+          font-family:  $fontsSecondary;
+          
  
          }
     }
@@ -53,13 +48,14 @@ header{
         width: 50%;
         justify-content: center;
         margin-bottom: 0;
+        padding-left: 60px;
 
         img{
-            width: 90%;
-            height: 40%;
-            padding-left: 30px;
+            width: 100%;
+            height: 50%;
+            
             }
-        h1{
+        h2{
            margin-top: 15px;
            text-align: center;
            font-size: 40px;
@@ -71,7 +67,9 @@ header{
            margin-top: 15px;
            text-align: center;
            font-size: 15px;
-         font-family:  $fontsSecondary
+         font-family:  $fontsSecondary;
+         
+
 
         }
         
