@@ -60,7 +60,7 @@ header{
            text-align: center;
            font-size: 40px;
            font-family:  $fontsPrimary
-            
+           
            
         }
         p{
@@ -84,30 +84,38 @@ header{
      
     
     .pantalla-div{
-        flex-direction: row;
+        
         
         
         flex-direction: column;
-                 
+                 padding: 0;
                  
                 &-izquierda{
                   width: 100%;
                   height: 100%;
+                  padding: 0px;
+                  padding-top: 60px;
+                  padding-left: 10px;
+                  padding-right: 10px;
                   img{
                      
-                    width: 90%;
-                    height: 450px;
+                    width: 100%;
+                    height: 400px;
+                    padding: 0;
                     
                 }
                 }
                 &-derecha{
                    width: 100%;
                    height: 100%;
+                   padding: 0px;
+                   padding-left: 10px;
+                   padding-right: 10px;
                    img{
                      
-                    width: 90%;
-                    height: 450px;
-                    
+                    width: 100%;
+                    height: 400px;
+                    padding: 0;
                 }
                 }
             }
