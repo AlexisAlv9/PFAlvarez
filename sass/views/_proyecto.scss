@@ -1,16 +1,10 @@
            /* Seccion Proyetos */
-           @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');
-           * {
-               margin: 0;
-               padding: 0;
-               box-sizing: border-box;
-           }
-           
+         
            
       
             .proyectos-text{
               h1 {
-                font-family: 'Bebas Neue', sans-serif;
+               
                text-align: center;
                  margin-top: 50px;
                  margin-bottom: 15px;
@@ -19,17 +13,17 @@
 
               }
               p{
-                margin-top: 50px;
+                
                 font-size: 20px;
                 text-align: center;
-                margin-bottom: 50px;
+                
                 font-family: $fontsSecondary;
               }
             }                        
           
                                     
                                     
-           .conteiner .coleccion1 {
+           .conteiner-proy{
             width: 100%;
             max-width: 1400px;
             height: 430;
@@ -72,20 +66,13 @@
                 
             }
         }
-        h2{
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: $fontsPrimary;
-        }
-
+        
        
 
         
         
         //hover
-        .conteiner-card:hover{
+        .conteiner-proy-card:hover{
             transform: translateY(-15px);
             box-shadow: 0 12px 16px rgb(0,0,0,0.5);
         
