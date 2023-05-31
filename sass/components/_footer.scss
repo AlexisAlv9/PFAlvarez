@@ -124,13 +124,12 @@
 .footer{
     font-family: $fontsSecondary;
     padding: 20px;
-    background-color: $fontBody;
+    background-color: $fontFooter;
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
-    
     
     
     &-redes{
