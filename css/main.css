@@ -10,28 +10,6 @@
   margin-right: 60px;
   padding-top: 0;
 }
-.slider h2 {
-  position: absolute;
-  text-align: center;
-  color: #f8f8d4;
-  align-items: center;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  font-family: "Quicksand", sans-serif;
-}
-.slider p {
-  position: absolute;
-  text-align: center;
-  color: #f8f8d4;
-  align-items: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  font-family: "Dosis", sans-serif;
-}
 .slider ul {
   display: flex;
   animation: cambio 20s infinite alternate linear;
@@ -73,61 +51,64 @@
     margin-left: -300%;
   }
 }
+.inicio-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 70px;
+}
+.inicio-text h2 {
+  color: #071f38;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+}
+.inicio-text p {
+  color: #071f38;
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+}
+
 /* Galeria */
 .conteiner {
   width: 100%;
-  max-width: 1200px;
-  height: 530;
+  max-width: 1400px;
+  height: 430;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
-}
-.conteiner-texto {
-  padding: 20px;
-  margin-top: 30px;
-}
-.conteiner-texto h2 {
-  font-family: "Dosis", sans-serif;
-  color: #071f38;
-  font-size: 35px;
-  font-weight: 100;
-  margin-left: 0;
-  padding-left: 12px;
-}
-.conteiner-texto p {
-  font-family: "Quicksand", sans-serif;
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
-  color: hsl(0, 0%, 50%);
-  text-align: center;
-  padding-top: 20px;
-}
-.conteiner-texto a {
-  font-size: 20px;
-  color: inherit;
-  color: #071f38;
-  line-height: 20px;
-  display: inline-block;
-  border-radius: 50%;
-  opacity: 1;
-  padding-left: 17px;
-  text-decoration: none;
+  padding: 30px;
 }
 .conteiner-card {
-  width: 430px;
-  height: 530;
+  width: 300px;
+  height: 400px;
+  margin: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.conteiner-card img {
+  width: 300px;
+  height: 280px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
-  text-align: center;
   transition: all 0.25s;
-  margin-top: 30px;
 }
-.conteiner-card img {
-  width: 430px;
-  height: 330px;
+.conteiner-card h2 {
+  font-weight: 500;
+  font-family: "Dosis", sans-serif;
+}
+.conteiner-card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+.conteiner-card a {
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .proyecto-destacado {
@@ -144,6 +125,7 @@
   height: 600px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
   overflow: hidden;
   margin: 20px;
   text-align: center;
@@ -166,7 +148,7 @@
   opacity: 0.5;
 }
 
-.conteiner-card:hover {
+.conteiner-card img:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
@@ -183,42 +165,19 @@
     width: 90%;
     height: 350px;
   }
-  .slider h2 {
-    font-size: 25px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .inicio-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .slider p {
-    font-size: 15px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .inicio-text h2 {
+    color: #071f38;
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
   }
-  .conteiner {
-    width: 100%;
-    max-width: 1200px;
-    height: 300;
-    justify-content: center;
-    display: flex;
-  }
-  .conteiner-texto {
-    padding: 12px;
-    margin-top: 20px;
-  }
-  .conteiner-texto h2 {
-    font-size: 22px;
-  }
-  .conteiner-texto a {
-    font-size: 16px;
-  }
-  .conteiner-card {
-    width: 300px;
-    height: 250px;
-  }
-  .conteiner img {
-    width: 300px;
-    height: 250px;
+  .inicio-text p {
+    color: #071f38;
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
   }
   .proyecto-destacado {
     width: 100%;
