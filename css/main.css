@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 .slider {
   width: 90%;
   height: 630px;
@@ -7,25 +10,27 @@
   margin-right: 60px;
   padding-top: 0;
 }
-.slider h1 {
+.slider h2 {
   position: absolute;
   text-align: center;
   color: #f8f8d4;
   align-items: center;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
+  font-family: "Quicksand", sans-serif;
 }
 .slider p {
   position: absolute;
   text-align: center;
   color: #f8f8d4;
   align-items: center;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
+  font-family: "Dosis", sans-serif;
 }
 .slider ul {
   display: flex;
@@ -72,10 +77,9 @@
 .conteiner {
   width: 100%;
   max-width: 1200px;
-  height: 430;
+  height: 530;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: auto;
 }
 .conteiner-texto {
@@ -83,16 +87,15 @@
   margin-top: 30px;
 }
 .conteiner-texto h2 {
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   color: #071f38;
   font-size: 35px;
   font-weight: 100;
   margin-left: 0;
-  display: inline-block;
   padding-left: 12px;
 }
 .conteiner-texto p {
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
@@ -109,6 +112,7 @@
   border-radius: 50%;
   opacity: 1;
   padding-left: 17px;
+  text-decoration: none;
 }
 .conteiner-card {
   width: 430px;
@@ -124,10 +128,6 @@
 .conteiner-card img {
   width: 430px;
   height: 330px;
-}
-.conteiner-card a {
-  font-weight: 500;
-  text-decoration: none;
 }
 
 .proyecto-destacado {
@@ -183,15 +183,15 @@
     width: 90%;
     height: 350px;
   }
-  .slider h1 {
+  .slider h2 {
     font-size: 25px;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .slider p {
     font-size: 15px;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -199,13 +199,18 @@
     width: 100%;
     max-width: 1200px;
     height: 300;
+    justify-content: center;
+    display: flex;
   }
   .conteiner-texto {
     padding: 12px;
     margin-top: 20px;
   }
   .conteiner-texto h2 {
-    font-size: 25px;
+    font-size: 22px;
+  }
+  .conteiner-texto a {
+    font-size: 16px;
   }
   .conteiner-card {
     width: 300px;
@@ -231,14 +236,14 @@
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 30px;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
   padding-top: 0;
 }
 .proyectos-text p {
   font-size: 20px;
   text-align: center;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .conteiner-proy {
@@ -267,7 +272,7 @@
 }
 .conteiner-proy-card h4 {
   font-weight: 500;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 .conteiner-proy-card p {
   padding: 0 1rem;
@@ -285,6 +290,14 @@
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 991px) {
+  .proyectos-text h1 {
+    font-size: 22px;
+  }
+  .proyectos-text p {
+    font-size: 16px;
+  }
+}
 .pantalla-divididaCon {
   display: flex;
   text-align: center;
@@ -337,13 +350,9 @@
 }
 
 @media (max-width: 991px) {
-  .pantalla-dividida-izquierda {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (max-width: 610px) {
   .pantalla-divididaCon {
     flex-direction: column;
+    padding-right: 10px;
   }
   .pantalla-divididaCon .pantalla-divididaCon-izquierda {
     height: 100%;
@@ -362,7 +371,6 @@
   }
 }
 .pantalla-div {
-  margin-top: 0px;
   display: flex;
   padding-left: 60px;
   padding-top: 0px;
@@ -384,14 +392,14 @@
   margin-top: 15px;
   text-align: center;
   font-size: 30px;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
 }
 .pantalla-div-izquierda p {
   margin-top: 15px;
   text-align: center;
-  font-size: 15px;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
 }
 .pantalla-div-derecha {
   height: 100vh;
@@ -408,20 +416,26 @@
   margin-top: 15px;
   text-align: center;
   font-size: 30px;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
 }
 .pantalla-div-derecha p {
   margin-top: 15px;
   text-align: center;
-  font-size: 15px;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 991px) {
   .pantalla-div {
     flex-direction: column;
     padding: 0;
+  }
+  .pantalla-div h2 {
+    font-size: 22px;
+  }
+  .pantalla-div p {
+    font-size: 16px;
   }
   .pantalla-div-izquierda {
     width: 100%;
@@ -470,18 +484,18 @@
   width: 50%;
   justify-content: center;
 }
-.pantalla-dividida-derecha h1 {
+.pantalla-dividida-derecha h2 {
   text-align: center;
   font-size: 40px;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
 .pantalla-dividida-derecha p {
   margin-top: 15px;
   text-align: center;
-  font-size: 18px;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
   padding-left: 60px;
   font-weight: 100;
 }
@@ -502,15 +516,15 @@
 .pantalla-divididaDos-izquierdaDos h2 {
   margin-top: 15px;
   text-align: center;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
 .pantalla-divididaDos-izquierdaDos p {
   margin-top: 15px;
   text-align: center;
-  font-size: 18px;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
 }
 .pantalla-divididaDos-derechaDos {
   height: 800px;
@@ -526,15 +540,15 @@
 .pantalla-divididaDos-derechaDos h2 {
   margin-top: 0px;
   text-align: center;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
 .pantalla-divididaDos-derechaDos p {
   margin-top: 15px;
   text-align: center;
-  font-size: 18px;
-  font-family: font-family "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 1004px) {
@@ -542,14 +556,21 @@
     flex-direction: column;
     padding: 0;
   }
+  .pantalla-dividida h2 {
+    font-size: 22px;
+  }
+  .pantalla-dividida p {
+    font-size: 16px;
+  }
   .pantalla-dividida-izquierda {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    height: 350px;
   }
   .pantalla-dividida-izquierda img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     padding-left: 10px;
   }
   .pantalla-dividida-derecha {
@@ -566,6 +587,12 @@
     flex-direction: column;
     padding: 0;
   }
+  .pantalla-divididaDos h2 {
+    font-size: 22px;
+  }
+  .pantalla-divididaDos p {
+    font-size: 16px;
+  }
   .pantalla-divididaDos-izquierdaDos {
     width: 100%;
     height: 100%;
@@ -576,7 +603,7 @@
   .pantalla-divididaDos-izquierdaDos img {
     padding-left: 10px;
     width: 100%;
-    height: 450px;
+    height: 300px;
   }
   .pantalla-divididaDos-derechaDos {
     width: 100%;
@@ -588,7 +615,50 @@
   .pantalla-divididaDos-derechaDos img {
     padding-left: 10px;
     width: 100%;
-    height: 450px;
+    height: 300px;
+  }
+}
+.footer {
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer-redes {
+  text-align: center;
+  color: #071f38;
+}
+.footer-redes a {
+  font-size: 24px;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 1;
+  color: #071f38;
+}
+.footer-titulo-final {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  color: #071f38;
+  font-family: hsl(0, 0%, 50%);
+}
+
+.redes a:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 610px) {
+  .footer-titulo-final {
+    font-size: 13px;
   }
 }
 * {
@@ -610,29 +680,16 @@
   padding-top: 20px;
 }
 
-.titulo {
+.logo a h1 {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #071f38;
   transition: 0.15s ease-in-out;
   position: relative;
   font-size: 28px;
   padding-right: 3px;
-  font-size: font-family "Bebas Neue", sans-serif;
-  font-weight: 100;
-}
-
-.titulo-dos {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: rgb(69, 76, 97);
-  transition: 0.15s ease-in-out;
-  position: relative;
-  font-size: 28px;
-  padding-left: 10px;
-  font-size: font-family "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(54, 61, 92);
 }
 
 .menu {
@@ -650,7 +707,7 @@
   transition: 0.15s ease-in-out;
   text-transform: uppercase;
   position: relative;
-  font-family: font-family "Bebas Neue", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   padding: 0px;
 }
@@ -694,6 +751,15 @@
 }
 
 @media (max-width: 610px) {
+  .nav-bar {
+    height: 100px;
+  }
+  .logo a h1 {
+    font-size: 20px;
+    padding-top: 40px;
+    width: 200px;
+    text-align: left;
+  }
   .menu {
     flex-direction: column;
     align-items: center;
@@ -719,40 +785,4 @@
   #check:checked ~ .menu {
     right: 0;
   }
-}
-.footer {
-  font-family: font-family "Josefin Sans", sans-serif;
-  padding: 20px;
-  background-color: #ffffff;
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-.footer-redes {
-  text-align: center;
-  color: #071f38;
-}
-.footer-redes a {
-  font-size: 24px;
-  color: inherit;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  opacity: 1;
-  color: #071f38;
-}
-.footer-titulo-final {
-  text-align: center;
-  font-size: 15px;
-  margin: 10px 0 0 0;
-  color: #071f38;
-}
-
-.redes a:hover {
-  opacity: 0.5;
 }

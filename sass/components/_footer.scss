@@ -1,123 +1,5 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-
-.nav-bar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: $fontFooter;
-    padding: 60px;
-    padding-bottom: 60px;
-    padding-top: 20px;
-    
-}
-.titulo {
-                display: inline-block;
-                text-decoration: none;
-                text-align: center;
-                color: $fontlight;
-                transition: 0.15s ease-in-out;
-                position: relative;
-                font-size: 28px;
-                padding-right: 3px;
-                font-size: $fontsPrimary;
-                font-weight: 100;
-
-    }
-    .titulo-dos {
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        color: rgb(69, 76, 97);
-        transition: 0.15s ease-in-out;
-        position: relative;
-        font-size: 28px;
-        padding-left: 10px;
-        font-size: $fontsPrimary;
-        
-
-}
-    .menu{
-        display: flex;
-        li{
-            padding: 10px;
-            margin: 5px;
-            a{
-                display: inline-block;
-                text-decoration: none;
-                text-align: center;
-                color: $fontlight;
-                transition: 0.15s ease-in-out;
-                text-transform: uppercase;
-                position: relative;
-                font-family: $fontsPrimary;
-                font-size: 14px;
-                padding: 0px;
-               
-
-            }
-        }
-    }
-.menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: $fontlight;
-    transition: 0.15s ease-in-out;
-}
-.menu li a:hover:after{
-    width: 100%;
-} 
-.open-menu , .close-menu{
-    position: absolute;
-    color: $fontlight;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-}
-.open-menu{
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu{
-    top:20px;
-    right: 20px;
-}
-
-#check{
-    display: none;
-}
-@media(max-width: 610px){
-    .menu{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100vh;
-        z-index: 100;
-        background-color: $fontFooter;
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu ,.close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-}
 
 //footer
 
@@ -158,6 +40,7 @@
     font-size: 15px;
     margin: 10px 0 0 0;
     color: $fontlight;
+    font-family: $fontNav;
     }
     }
 
@@ -167,7 +50,11 @@
 .redes a:hover{
    opacity: .5;
 }
-
+@media(max-width: 610px){
+    .footer-titulo-final{
+        font-size: 13px;
+    }
+}
 
 
 
