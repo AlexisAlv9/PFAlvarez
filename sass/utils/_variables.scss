@@ -4,14 +4,19 @@ $fontlight: #071f38;
 $fontBody: #f8f8d4;
 $fontNav: hsl(0, 0%, 50%);
 $fontFooter: #ffffff;
-
+$mediapad:  0px;
+$mediatitle:  22px;
+$mediap:  16px;
 //brackpoints
 
 $bplarge: 991px;
 $bpmin: 330px;
 
 //fonts
-$fontsPrimary : font-family 'Bebas Neue', sans-serif;
+$fontsPrimary : 'Dosis', sans-serif;
                 
               
-$fontsSecondary : font-family 'Josefin Sans', sans-serif;
+$fontsSecondary :  'Quicksand', sans-serif;
+
+
+$fontsNav:'Roboto Condensed', sans-serif;

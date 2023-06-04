@@ -1,99 +1,96 @@
 
-                                .pantalla-divididaCon{
+  .pantalla-divididaCon{
                                     
-                                    display: flex;
-                                    text-align: center;
-                                    justify-content: center;
-                                    width: 100%;
-                                    margin-bottom: 100px;
-                                    padding-top: 0px;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       width: 100%;
+       margin-bottom: 100px;
+       padding-top: 0px;
 
-                                    &-izquierda{
-                                    margin: 10px;
-                                    margin-left: 30px;
-                                    padding: 10px;
-                                    width: 30%;
+     &-izquierda{
+      margin: 10px;
+      margin-left: 30px;
+     padding: 10px;
+      width: 30%;
                                     
-                                    &-img{
-                                        height: 250px;
+      &-img{
+        height: 250px;
 
-                                        width: 80%;
-                                  }
+      width: 80%;
+     }
                                                                        
-                                    p{
-                                        font-size: 15px;
-                                        color: $fontlight;
+      p{
+       font-size: 15px;
+        color: $fontlight;
                                        
-                                    }
+        }
 
                                      
-                                }
-                                }
+      }
+             }
 
-                                  .contacto {
-                                    background: $fontFooter;
-                                    width: 50%;
-                                    margin: 10px ;
-                                    padding: 10px;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                    
-                                    padding-top: 0px;
-                                   &-form{
-                                    width: 90%;
-                                    max-width: 500px;
-                                    
-                                    border-radius: 1em;
-                                    padding: 3.5em 1.5em; 
-                                    margin: 0;
-                                    padding: 0;
+                .contacto {
+                  background: $fontFooter;
+                    width: 50%;
+                    margin: 10px ;
+                    padding: 10px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     padding-top: 0px;
+                   
+                     &-form{
+                    width: 90%;
+                    max-width: 500px;                
+                    border-radius: 1em;
+                     padding: 3.5em 1.5em; 
+                     margin: 0;
+                     padding: 0;
                                     
                                   
-                                    &-conteiner {
-                                    display: grid;
-                                    grid-auto-columns: auto;
-                                    width: 100%;
+                        &-conteiner {
+                         display: grid;
+                           grid-auto-columns: auto;
+                          width: 100%;
                                     
-                                    textarea{
-                                        max-width: 500px;
-                                        min-width: 500x;
-                                        min-height: 300px;
-                                        max-height: 300px;
+                           textarea{
+                            max-width: 500px;
+                            min-width: 500x;
+                            min-height: 300px;
+                            max-height: 300px;
                                     }
                                             }
                                      }
                             }
                                     
                             @media(max-width: $bplarge) {
-                                .pantalla-dividida-izquierda {
-                                    
-                                    grid-template-columns: repeat(1, 1fr);
-                                }
+                              
                             
-                                
+                                .pantalla-divididaCon{
+                                  flex-direction: column;
+                                  padding-right: 10px;
+                                  
+                                  .pantalla-divididaCon-izquierda{
+                                      height: 100%;
+                                      width: 100%;
+                                      justify-content: center;
+          
+                                      img{
+                                          width: 50%;
+                                      }
+                                  }
+                                  .contacto{
+                                      height: 100%;
+                                      width: 100%;
+                                      margin: 10px;
+                                      padding: 10px;
+                                      margin-left: 30px;
+                                  }
+                                  
+                              }
                             }
                                 
                             @media(max-width: 610px) {
-                                .pantalla-divididaCon{
-                                    flex-direction: column;
-                                    
-                                    .pantalla-divididaCon-izquierda{
-                                        height: 100%;
-                                        width: 100%;
-                                        justify-content: center;
-            
-                                        img{
-                                            width: 50%;
-                                        }
-                                    }
-                                    .contacto{
-                                        height: 100%;
-                                        width: 100%;
-                                        margin: 10px;
-                                        padding: 10px;
-                                        margin-left: 30px;
-                                    }
-                                    
-                                }
+                                
 
 
                                 }
